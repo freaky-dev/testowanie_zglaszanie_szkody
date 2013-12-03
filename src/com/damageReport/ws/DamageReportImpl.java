@@ -1,21 +1,21 @@
-package main.ws;
+package com.damageReport.ws;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 
-@WebService(endpointInterface = "main.ws.DamageReport")
+@WebService(endpointInterface = "com.damageReport.ws.DamageReport")
 public class DamageReportImpl implements DamageReport{
 
 	@Override
-	public int informacje_o_zgloszeniu(String damagedPropertType, String damageType,
+	public int reportInformation(String damagedPropertType, String damageType,
 			String policyNumber) {
 		
 		return 0;
 	}
 
 	@Override
-	public void informacje_o_szkodzie(String damageDate, String damageLocalization,
+	public void damageInformation(String damageDate, String damageLocalization,
 			String damageCause, String damageDescription,
 			boolean wasReportedInThirdParty) {
 
@@ -23,20 +23,20 @@ public class DamageReportImpl implements DamageReport{
 	}
 
 	@Override
-	public void dane_osoby_zglaszajacej_szkode(String firstName, String lastName,
+	public void personReportingDamageData(String firstName, String lastName,
 			String phoneNumber, String email, String province, String zipCode,
 			String city, String street, String boulding, String house) {
 		
 	}
 
 	@Override
-	public void dane_wlasciciela_pojazdu_poszkodowanego(int numberOfOwners,
+	public void ownerDamagedVehicleData(int numberOfOwners,
 			String pesel) {
 		
 	}
 
 	@Override
-	public void dane_pojazdu_poszkodowanego(String registrationNumber,
+	public void damagedVehicleData(String registrationNumber,
 			String carBrand, String carModel, String carYearOfProduction,
 			String carVINNumber, String firstRegistrationDate,
 			String technicalExaminationDateFrom,
@@ -45,7 +45,7 @@ public class DamageReportImpl implements DamageReport{
 	}
 
 	@Override
-	public void potwierdzenie() {
+	public void confirmation() {
 
 
 	}

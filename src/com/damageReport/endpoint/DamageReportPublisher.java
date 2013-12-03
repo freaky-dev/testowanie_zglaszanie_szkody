@@ -1,8 +1,8 @@
-package main.endpoint;
+package com.damageReport.endpoint;
 
 
 import javax.xml.ws.Endpoint;
-import main.ws.DamageReportImpl;
+import com.damageReport.ws.DamageReportImpl;
 
  
 //Endpoint publisher

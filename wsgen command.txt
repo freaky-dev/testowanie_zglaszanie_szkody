@@ -1,0 +1,3 @@
+wsgen -keep -cp ./bin -d ./bin -s ./src -r . -wsdl com.damageReport.ws.DamageReportImpl
+
+to be run in main project directory
